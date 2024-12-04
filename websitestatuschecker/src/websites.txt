@@ -1,0 +1,6 @@
+"https://www.google.com",
+"https://www.facebook.com",
+"https://www.twitter.com",
+"https://www.reddit.com",
+"https://www.youtube.com",
+"https://github.com/sophiasaenzz/WebsiteStatusChecker-CSCI3344"
