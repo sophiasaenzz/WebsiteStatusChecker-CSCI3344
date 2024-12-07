@@ -4,6 +4,9 @@ use ureq;
 use std::time::Duration;
 use std::thread;
 use std::sync::mpsc; //for channels communciation between threads
+use std::fs;
+use std::io::Write;
+//use serde::{Deserialize, Serialize};
 
 
 //create a struct to hold the website status
@@ -28,7 +31,7 @@ impl WebsiteStatus { //constructor
 }
 
 
-fn check_website(url: &str, timeout: Duration) -> WebsiteStatus {
+fn check_website(url: &str, _timeout: Duration) -> WebsiteStatus {
     let start = std::time::Instant::now();
     let mut error = None;
 
@@ -54,58 +57,19 @@ fn main() {
     let (tx, rx) = mpsc::channel();
     let timeout = Duration::from_secs(5);
 
-    let urls = vec![
+    /*let urls = vec![
         "https://github.com/sophiasaenzz/WebsiteStatusChecker-CSCI3344",
         "http://www.youtube.com",
         "http://www.facebook.com",
         "http://www.baidu.com",
         "http://www.yahoo.com",
         "http://www.amazon.com",
-        "http://www.wikipedia.org",
-        "http://www.qq.com",
-        "http://www.google.co.in",
-        "http://www.twitter.com",
-        "http://www.live.com",
-        "http://www.taobao.com",
-        "http://www.bing.com",
-        "http://www.instagram.com",
-        "http://www.weibo.com",
-        "http://www.sina.com.cn",
-        "http://www.linkedin.com",
-        "http://www.yahoo.co.jp",
-        "http://www.msn.com",
-        "http://www.vk.com",
-        "http://www.google.de",
-        "http://www.yandex.ru",
-        "http://www.hao123.com",
-        "http://www.google.co.uk",
-        "http://www.reddit.com",
-        "http://www.ebay.com",
-        "http://www.google.fr",
-        "http://www.t.co",
-        "http://www.tmall.com",
-        "http://www.google.com.br",
-        "http://www.360.cn",
-        "http://www.sohu.com",
-        "http://www.amazon.co.jp",
-        "http://www.pinterest.com",
-        "http://www.netflix.com",
-        "http://www.google.it",
-        "http://www.google.ru",
-        "http://www.microsoft.com",
-        "http://www.google.es",
-        "http://www.wordpress.com",
-        "http://www.gmw.cn",
-        "http://www.tumblr.com",
-        "http://www.paypal.com",
-        "http://www.blogspot.com",
-        "http://www.imgur.com",
-        "http://www.stackoverflow.com",
-        "http://www.aliexpress.com",
-        "http://www.naver.com",
-        "http://www.ok.ru",
-        "http://www.apple.com",
-    ];
+    ]; */
+
+    //read the urls from a file
+    let file = fs::read_to_string("urls.txt").unwrap();
+    let urls: Vec<&str> = file.lines().collect();
+
 
     let mut handles = vec![];
 
@@ -135,9 +99,15 @@ fn main() {
         handle.join().unwrap();
     }
 
+    //write the status to a file
+    let mut file = fs::File::create("status.txt").unwrap();
     for status in results {
         println!("{:?}", status);
+
+        writeln!(file, "{:?}", status).unwrap();
     }
 
+
     println!("All threads have finished");
+
 }

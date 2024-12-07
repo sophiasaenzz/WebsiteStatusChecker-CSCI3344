@@ -1,0 +1,50 @@
+WebsiteStatus { url: "http://www.msn.com", status: Ok(200), response_time: 60.823467ms, error: None }
+WebsiteStatus { url: "http://www.t.co", status: Err("http://www.t.co/: status code 530"), response_time: 65.5954ms, error: Some("http://www.t.co/: status code 530") }
+WebsiteStatus { url: "http://www.tumblr.com", status: Ok(200), response_time: 65.859822ms, error: None }
+WebsiteStatus { url: "http://www.reddit.com", status: Err("https://www.reddit.com/: status code 403 (redirected from http://www.reddit.com/)"), response_time: 67.088371ms, error: Some("https://www.reddit.com/: status code 403 (redirected from http://www.reddit.com/)") }
+WebsiteStatus { url: "http://www.google.it", status: Ok(200), response_time: 74.061667ms, error: None }
+WebsiteStatus { url: "http://www.google.co.uk", status: Ok(200), response_time: 77.727911ms, error: None }
+WebsiteStatus { url: "http://www.google.de", status: Ok(200), response_time: 79.623463ms, error: None }
+WebsiteStatus { url: "http://www.google.es", status: Ok(200), response_time: 87.594797ms, error: None }
+WebsiteStatus { url: "http://www.google.ru", status: Ok(200), response_time: 94.905672ms, error: None }
+WebsiteStatus { url: "http://www.google.fr", status: Ok(200), response_time: 97.109893ms, error: None }
+WebsiteStatus { url: "http://www.bing.com", status: Ok(200), response_time: 97.221364ms, error: None }
+WebsiteStatus { url: "http://www.wikipedia.org", status: Ok(200), response_time: 111.603157ms, error: None }
+WebsiteStatus { url: "http://www.imgur.com", status: Ok(200), response_time: 116.655114ms, error: None }
+WebsiteStatus { url: "http://www.wordpress.com", status: Ok(200), response_time: 127.886782ms, error: None }
+WebsiteStatus { url: "http://www.google.co.in", status: Ok(200), response_time: 150.433301ms, error: None }
+WebsiteStatus { url: "http://www.apple.com", status: Ok(200), response_time: 166.160711ms, error: None }
+WebsiteStatus { url: "http://www.amazon.co.jp", status: Ok(200), response_time: 176.501362ms, error: None }
+WebsiteStatus { url: "http://www.pinterest.com", status: Ok(200), response_time: 203.959646ms, error: None }
+WebsiteStatus { url: "http://www.google.com.br", status: Ok(200), response_time: 253.319991ms, error: None }
+WebsiteStatus { url: "http://www.amazon.com", status: Ok(200), response_time: 260.786772ms, error: None }
+WebsiteStatus { url: "http://www.linkedin.com", status: Ok(200), response_time: 263.546882ms, error: None }
+WebsiteStatus { url: "http://www.youtube.com", status: Ok(200), response_time: 276.038835ms, error: None }
+WebsiteStatus { url: "http://www.microsoft.com", status: Ok(200), response_time: 350.573184ms, error: None }
+WebsiteStatus { url: "http://www.360.cn", status: Ok(200), response_time: 356.958459ms, error: None }
+WebsiteStatus { url: "http://www.ebay.com", status: Ok(200), response_time: 368.036268ms, error: None }
+WebsiteStatus { url: "http://www.stackoverflow.com", status: Ok(200), response_time: 373.644904ms, error: None }
+WebsiteStatus { url: "http://www.yahoo.com", status: Ok(200), response_time: 391.295423ms, error: None }
+WebsiteStatus { url: "http://www.taobao.com", status: Ok(200), response_time: 409.706289ms, error: None }
+WebsiteStatus { url: "http://www.twitter.com", status: Ok(200), response_time: 443.705852ms, error: None }
+WebsiteStatus { url: "http://www.blogspot.com", status: Err("http://www.blogspot.com/: Too Many Redirects: reached max redirects (5)"), response_time: 462.483103ms, error: Some("http://www.blogspot.com/: Too Many Redirects: reached max redirects (5)") }
+WebsiteStatus { url: "http://www.gmw.cn", status: Ok(200), response_time: 466.248925ms, error: None }
+WebsiteStatus { url: "https://github.com/sophiasaenzz/WebsiteStatusChecker-CSCI3344", status: Ok(200), response_time: 477.181321ms, error: None }
+WebsiteStatus { url: "http://www.instagram.com", status: Ok(200), response_time: 483.984446ms, error: None }
+WebsiteStatus { url: "http://www.sohu.com", status: Ok(200), response_time: 581.935785ms, error: None }
+WebsiteStatus { url: "http://www.paypal.com", status: Ok(200), response_time: 634.992404ms, error: None }
+WebsiteStatus { url: "http://www.sina.com.cn", status: Ok(200), response_time: 670.140369ms, error: None }
+WebsiteStatus { url: "http://www.facebook.com", status: Ok(200), response_time: 691.097668ms, error: None }
+WebsiteStatus { url: "http://www.naver.com", status: Ok(200), response_time: 683.926061ms, error: None }
+WebsiteStatus { url: "http://www.qq.com", status: Ok(200), response_time: 690.194723ms, error: None }
+WebsiteStatus { url: "http://www.yahoo.co.jp", status: Ok(200), response_time: 707.44043ms, error: None }
+WebsiteStatus { url: "http://www.baidu.com", status: Ok(200), response_time: 741.034483ms, error: None }
+WebsiteStatus { url: "http://www.netflix.com", status: Ok(200), response_time: 905.148107ms, error: None }
+WebsiteStatus { url: "http://www.tmall.com", status: Ok(200), response_time: 1.041918523s, error: None }
+WebsiteStatus { url: "http://www.hao123.com", status: Ok(200), response_time: 1.0525563s, error: None }
+WebsiteStatus { url: "http://www.ok.ru", status: Ok(200), response_time: 1.092061434s, error: None }
+WebsiteStatus { url: "http://www.live.com", status: Ok(200), response_time: 1.488095855s, error: None }
+WebsiteStatus { url: "http://www.aliexpress.com", status: Err("http://www.aliexpress.com/: Too Many Redirects: reached max redirects (5)"), response_time: 1.728894949s, error: Some("http://www.aliexpress.com/: Too Many Redirects: reached max redirects (5)") }
+WebsiteStatus { url: "http://www.vk.com", status: Ok(200), response_time: 2.491776292s, error: None }
+WebsiteStatus { url: "http://www.weibo.com", status: Ok(200), response_time: 2.596210519s, error: None }
+WebsiteStatus { url: "http://www.yandex.ru", status: Ok(200), response_time: 2.778834116s, error: None }
